@@ -26,7 +26,13 @@ export default function Home() {
         </div>
       </main>
 
-
+      <footer className={styles.footer}>
+        <a
+          href="https://github.com/nikolaswise/explore-sortable-grid"
+        >
+          Get the Repo
+        </a>
+      </footer>
     </div>
   )
 }
