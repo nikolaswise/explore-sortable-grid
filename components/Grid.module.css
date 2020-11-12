@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.panel {
+  padding: 2rem;
+  border: 1px solid #b0b0b0;
+  background-color: #dcdcdc;
+  position: relative;
+}
+
+.handle {
+  padding: 0.5rem;
+  cursor: grab;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate3d(0, -50%, 0);
+}
