@@ -44,10 +44,17 @@ const SortableItem = SortableElement(({value}) => (
 
 const SortableList = SortableContainer(({items}) => {
   return (
-    <div className={styles.grid}>
-      {items.map((value, index) => (
-        <SortableItem key={`item-${value.widget}`} index={index} value={value} />
-      ))}
+    <div>
+      <div className={styles.grid}>
+        {items.map((value, index) => (
+          <SortableItem key={`item-${value.widget}`} index={index} value={value} />
+        ))}
+      </div>
+      <div className={styles.data}>
+<pre><code>
+  {JSON.stringify(items, null, 2) }
+</code></pre>
+      </div>
     </div>
   );
 });

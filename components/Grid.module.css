@@ -20,3 +20,10 @@
   top: 50%;
   transform: translate3d(0, -50%, 0);
 }
+
+.data {
+  background-color: #f7f7f7;
+  border: 1px solid #dcdcdc;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
